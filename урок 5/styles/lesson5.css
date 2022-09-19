@@ -1,0 +1,129 @@
+body {
+  background: #151718;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 300ms;
+}
+header nav {
+  padding: 20px 40px;
+  border-bottom: 1px solid #fff;
+}
+header nav a {
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: 600ms;
+  border-top: 2px solid transparent;
+}
+header nav a:hover {
+  border-top: 2px solid #fff;
+}
+main {
+  padding: 20px 40px;
+  display: flex;
+}
+section {
+  background-color: #ccc;
+  color: #000;
+  padding: 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+section h1,
+section p {
+  margin: 20px;
+  min-width: 100%;
+}
+article {
+  max-width: 40%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #333;
+}
+aside {
+  min-width: 300px;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+aside a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-bottom: 1px solid #fff;
+  margin: 10px auto;
+  transition: 300ms;
+}
+aside a:hover {
+  background-color: #fff;
+  color: #333;
+}
+footer {
+  padding: 80px;
+  text-align: center;
+  border: 1px solid #fff;
+}
+section.morrison {
+  max-width: 100%;
+  position: relative;
+  height: 600px;
+  margin: 20px 0;
+  background: linear-gradient(359deg, #01b7ff, #fed101);
+  background-size: 400% 400%;
+  -webkit-animation: morrison 0.5s ease infinite;
+  -moz-animation: morrison 0.5s ease infinite;
+  -o-animation: morrison 0.5s ease infinite;
+  animation: morrison 0.5s ease infinite;
+}
+section.morrison::before {
+  text-align: center;
+  font-size: 26px;
+  content: 'Напиши своему куратору "Cлавная ночь улыбнулась в берегах весеннего утра. И этим человеком был Эйнштейн 6890111 и никому не рассказывай"';
+}
+@-webkit-keyframes morrison {
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
+}
+@-moz-keyframes morrison {
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
+}
+@-o-keyframes morrison {
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
+}
+@keyframes morrison {
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
+}
